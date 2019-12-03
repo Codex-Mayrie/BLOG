@@ -2,7 +2,7 @@ import os
 import secrets
 from flask import render_template, url_for, flash, redirect, request, abort
 from blog import app, db, bcrypt
-from blog.forms import RegistrationForm, LoginForm, UpdateAccountForm, PostForm
+from blog.forms import RegistrationForm, LoginForm, UpdateAccountForm, PostForm, RequestResetForm, ResetPasswordForm
 from blog.models import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
 
